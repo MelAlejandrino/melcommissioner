@@ -18,7 +18,7 @@ function Content() {
           <div className="worksHeading">
             <h1>{item.title}</h1>
             <img
-              src="src/assets/triangle.png"
+              src="./assets/triangle.png"
               alt=""
               className={`arrow ${clicked === item ? "active" : ""}`}
             />
