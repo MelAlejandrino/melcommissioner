@@ -46,7 +46,7 @@ const data = [
     title: "Character Directory",
     content:
       "Character Directory is a Python-based application featuring a user-friendly graphical interface powered by tkinter. With this tool, you can effortlessly input values, such as character details, into the application. It conveniently saves all the provided information directly to your local storage, ensuring easy access and retrieval whenever needed.",
-    src: {triangleImage},
+    src: `${triangleImage}`,
   },
   {
     title: "Math Tutor",
