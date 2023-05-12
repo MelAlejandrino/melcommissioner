@@ -239,7 +239,7 @@ ul[role="list"]{
   display: flex;
 }
 .background-container {
-  background: url('src/assets/cavebg.png');
+  background: url('./assets/cavebg.png');
   position: absolute;
   top: 0;
   /* transform: translateY(50%); */
