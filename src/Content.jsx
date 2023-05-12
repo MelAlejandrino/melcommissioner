@@ -1,5 +1,6 @@
 import { useState } from "react";
 import React from "react";
+import triangleImage from './assets/triangle.png';
 
 function Content() {
   const [clicked, setClicked] = useState(null);
@@ -18,7 +19,7 @@ function Content() {
           <div className="worksHeading">
             <h1>{item.title}</h1>
             <img
-              src="src/assets/triangle.png"
+              src={triangleImage}
               alt=""
               className={`arrow ${clicked === item ? "active" : ""}`}
             />
@@ -45,7 +46,7 @@ const data = [
     title: "Character Directory",
     content:
       "Character Directory is a Python-based application featuring a user-friendly graphical interface powered by tkinter. With this tool, you can effortlessly input values, such as character details, into the application. It conveniently saves all the provided information directly to your local storage, ensuring easy access and retrieval whenever needed.",
-    src: "./src/assets/me.jpg",
+    src: {triangleImage},
   },
   {
     title: "Math Tutor",
