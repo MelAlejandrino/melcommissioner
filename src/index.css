@@ -1,0 +1,255 @@
+@import url('https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@500;600;800&display=swap');
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font: inherit;
+}
+
+html,
+body,
+section {
+  min-height: 100vh;
+}
+
+img,
+picture,
+svg,
+video {
+  display: block;
+  max-width: 100%;
+}
+
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+ul[role="list"],
+ol[role="list"] {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: white;
+}
+
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+body {
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* general styling */
+body {
+  display: flex;
+  justify-content: center;
+  background-color: #0d1117;
+  color: white;
+  font-family: "Darker Grotesque", sans-serif;
+}
+
+.content {
+  /* background-color: #28313d; */
+  width: 100vw;
+  padding: 1em;
+  display: flex;
+  justify-content: center;
+}
+
+.container{
+  width: 40em;
+}
+.meWrapper {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 1em;
+  margin-top: 6em;
+}
+
+.headingWrapper > picture {
+  max-width: 8em;
+}
+
+.headingWrapper > picture > img {
+  border-radius: 50%;
+}
+
+.socialLinks {
+  display: flex;
+  gap: 1em;
+  flex-wrap: wrap;
+  margin-right: auto;
+}
+.socialItem{
+  display: flex;
+  gap: 0.5em;
+  background-color: #28313d;
+  padding: 0.5em;
+  align-items: center;
+  font-weight: 700;
+  border-radius: 0.3em;
+  transition: all 0.3s linear;
+}
+.socialItem > img{
+  max-width: 1.5em;
+}
+
+.socialItem > h1{
+  margin-top: -0.2em;
+  font-size: clamp(0.3rem, 3vw, 1rem);
+}
+
+.socialItem:hover{
+  background-color: #857AFF;
+}
+.aboutMe > h1 {
+  font-weight: 900;
+  font-size: clamp(3rem, 4vw, 5rem);
+}
+
+.aboutMe > h2{
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #857AFF;
+}
+.aboutMe > p {
+  font-size: 1.3rem;
+}
+
+.worksContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+  margin-top: 6em;
+}
+
+.worksItem {
+  background-color: #28313d;
+  padding: 1em;
+  border-radius: 1em;
+  cursor: pointer;
+  transition: all 0.3s linear;
+}
+
+.worksHeading{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.arrow{
+  max-width: 2em;
+  transition: all 0.3s ease;
+}
+.worksHeading> h1 {
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+
+.work-content > p{
+  font-size: 1.2rem;
+}
+
+.active{
+  transform:rotate(-180deg)
+}
+.work-content{
+  max-height: 0;
+  overflow: hidden;
+  transition: all 0.5s cubic-bezier(0,1,0,1);
+
+}
+
+.work-content.show{
+  height: auto;
+  max-height: 9999px;
+  transition: all 0.5s cubic-bezier(1,0,1,0);
+}
+
+.work-content > img{
+  max-height: 20em;
+  width: 100%;
+  object-fit: cover;
+}
+
+/* headerNav */
+.headerNav{
+  position: fixed;
+  top: 2%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.323);
+  border-radius: 1em;
+}
+
+.headerNav[data-visible="false"]{
+  max-height: 0;
+  overflow: hidden;
+  transition: all 0.1s ease-out;
+}
+
+.headerNav[data-visible="true"]{
+  height: auto;
+  max-height: 9999px;
+  padding: 0.5em;
+  transition: all 0.3s cubic-bezier(0.23,1,0.23,1);
+}
+
+ul[role="list"]{
+  display: flex;
+  gap: 1em;
+}
+
+@media screen and (max-width: 456px) {
+  
+}
+
+.titleContent{
+  font-weight: 900;
+  font-size: 2rem;
+}
+
+.content{
+  position: relative;
+  display: flex;
+}
+.background-container {
+  background: url('src/assets/cavebg.png');
+  position: absolute;
+  top: 0;
+  /* transform: translateY(50%); */
+  left: 0;
+  width: 100%;
+  height: 100%;
+  /* background-position: center !important;
+  background-size: cover !important; */
+  filter: brightness(30%);
+  opacity: 0.8;
+  z-index: -1;
+  /* background-repeat: no-repeat; */
+}
