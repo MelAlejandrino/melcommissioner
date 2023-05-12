@@ -1,5 +1,10 @@
 import React from "react";
 import { useEffect } from "react";
+import Mansprite from './assets/mansprite.gif';
+import Facebook from './assets/facebook.png';
+import Github from './assets/github.png';
+import Twitter from './assets/twitter.png';
+
 function Heading() {
   useEffect(() => {
     const navTab = document.querySelector(".headerNav");
@@ -24,7 +29,7 @@ function Heading() {
     <div className="meWrapper">
       <div className="headingWrapper">
         <picture>
-          <img src="src/assets/mansprite.gif" alt="" />
+          <img src={Mansprite} alt="" />
         </picture>
         <div className="aboutMe">
           <h1>Mel Alejandrino</h1>
@@ -41,7 +46,7 @@ function Heading() {
           target="_blank"
           className="socialItem"
         >
-          <img src="src/assets/github.png" alt="" />
+          <img src={Github} alt="" />
           <h1>GITHUB</h1>
         </a>
         <a
@@ -49,7 +54,7 @@ function Heading() {
           target="_blank"
           className="socialItem"
         >
-          <img src="src/assets/facebook.png" alt="" />
+          <img src={Facebook} alt="" />
           <h1>FACEBOOK</h1>
         </a>
         <a
@@ -57,7 +62,7 @@ function Heading() {
           target="_blank"
           className="socialItem"
         >
-          <img src="src/assets/twitter.png" alt="" />
+          <img src={Twitter} alt="" />
           <h1>TWITTER</h1>
         </a>
       </div>
@@ -70,7 +75,7 @@ function Heading() {
                 target="_blank"
                 className="socialItem"
               >
-                <img src="src/assets/github.png" alt="" />
+                <img src={Github} alt="" />
                 <h1>GITHUB</h1>
               </a>
             </li>
@@ -80,7 +85,7 @@ function Heading() {
                 target="_blank"
                 className="socialItem"
               >
-                <img src="src/assets/facebook.png" alt="" />
+                <img src={Facebook} alt="" />
                 <h1>FACEBOOK</h1>
               </a>
             </li>
@@ -90,7 +95,7 @@ function Heading() {
                 target="_blank"
                 className="socialItem"
               >
-                <img src="src/assets/twitter.png" alt="" />
+                <img src={Twitter} alt="" />
                 <h1>TWITTER</h1>
               </a>
             </li>
