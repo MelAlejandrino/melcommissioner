@@ -87,7 +87,7 @@ const data = [
   },
   {
     title: "Conversion of the four number Systems",
-    content: "",
+    content: "This gives me a hard time since it has too many restrictions",
     src: "https://twitter.com/MelKun8/status/1620737077582368769",
   },
 ];
