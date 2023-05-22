@@ -1,9 +1,10 @@
 import React from "react";
 import { useEffect } from "react";
-import Mansprite from './assets/mansprite.gif';
+// import Mansprite from './assets/mansprite.gif';
 import Facebook from './assets/facebook.png';
 import Github from './assets/github.png';
 import Twitter from './assets/twitter.png';
+import Me from './assets/me.jpg';
 
 function Heading() {
   useEffect(() => {
@@ -29,7 +30,7 @@ function Heading() {
     <div className="meWrapper">
       <div className="headingWrapper">
         <picture>
-          <img src={Mansprite} alt="" />
+          <img src={Me} alt="" />
         </picture>
         <div className="aboutMe">
           <h1>Mel Alejandrino</h1>
