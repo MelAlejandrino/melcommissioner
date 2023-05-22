@@ -115,6 +115,7 @@ body {
   font-weight: 700;
   border-radius: 0.3em;
   transition: all 0.3s linear;
+  cursor: pointer;
 }
 .socialItem > img {
   max-width: 1.5em;
@@ -257,4 +258,19 @@ ul[role="list"] {
   opacity: 0.8;
   z-index: -1;
   /* background-repeat: no-repeat; */
+}
+.servList{
+  flex-wrap: wrap;
+}
+.servItem{
+  display: flex;
+  gap: 0.5em;
+  background-color: #28313d;
+  padding: 0.5em;
+  align-items: center;
+  font-weight: 700;
+  border-radius: 0.3em;
+  transition: all 0.3s linear;
+  cursor: pointer;
+  font-size: 1.2rem;
 }

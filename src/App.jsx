@@ -1,6 +1,7 @@
 import React from "react";
 import Content from "./Content";
 import Heading from "./Heading";
+import Services from "./services";
 
 function App() {
   return (
@@ -8,6 +9,7 @@ function App() {
       <div className="container">
         <Heading />
         <div className="worksContainer">
+          <Services />
           <Content />
         </div>
       </div>
