@@ -38,7 +38,7 @@ function Content() {
 
 const data = [
   {
-    title: "LIBRARY INFORMATION SYSTEM",
+    title: "Library Information System",
     content: "Simple CRUD library system",
     src: "https://twitter.com/MelKun8/status/1660600620192088065",
   },
