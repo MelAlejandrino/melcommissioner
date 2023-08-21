@@ -36,7 +36,7 @@ function Heading() {
           <h1>Mel Alejandrino</h1>
           <h2>Academic Commissioner</h2>
           <p>
-            A 2nd year student from University of Science and Technology of
+            A student from University of Science and Technology of
             Southern Philippines
           </p>
         </div>
