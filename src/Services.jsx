@@ -33,13 +33,16 @@ const servs = [
     title: "MYSQL",
   },
   {
-    title: "JAVA",
+    title: "MONGODB",
   },
   {
     title: "PYTHON",
   },
   {
-    title: "VISUAL BASIC",
+    title: "EXPRESS JS",
+  },
+  {
+    title: "FIGMA"
   },
 ];
 
